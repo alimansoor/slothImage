@@ -1,0 +1,11 @@
+{
+  "name": "slothimg",
+  "version": "1.0.0",
+  "description": "lothImage is a free lightweight library that will help users lazy load images across the entire website and also optimize images across different resolutions e.g. mobile and desktop",
+  "main": "slothImage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Ali Mansoor",
+  "license": "MIT"
+}
