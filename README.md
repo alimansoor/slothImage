@@ -7,7 +7,7 @@ SlothImage is a lightweight javascript library which is developed to help develo
 
 SlothImage will enable developers to have extremely light-weight pages which inturn improve SEO of the website.
 
-![Dashboard](https://github.com/alimansoor/slothImage/blob/master/sloth.png)
+![Dashboard](https://github.com/alimansoor/slothImage/blob/master/brand.png)
 
 ### Prerequisites
 
