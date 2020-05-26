@@ -1,3 +1,11 @@
+/**
+ * Sloth Image
+ * Version: 1.0
+ * Description: Image Lazy Load and Resolution Optimization Library
+ * Author: Muhammad Ali Mansoor <muhammad.mansoor@live.com>
+ * License: MIT
+ */
+
 try {
   /* SET OF IMAGES IN DESKTOP OR MOBILE VIEW */
   var images = [];
@@ -29,8 +37,8 @@ try {
       rect.top >= 0 - threshold &&
       rect.left >= 0 &&
       rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) +
-          threshold &&
+      (window.innerHeight || document.documentElement.clientHeight) +
+      threshold &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
@@ -121,27 +129,27 @@ try {
     // Breakpoint between Mobile and Desktop
     var break_point =
       obj.hasOwnProperty("break_point") &&
-      typeof obj["break_point"] === "number"
-        ? Math.abs(obj["break_point"])
-        : 0;
+      typeof obj["break_point"] === "number" ?
+      Math.abs(obj["break_point"]) :
+      0;
 
     // Mobile and Desktop Selectors
     selector_desktop =
       obj.hasOwnProperty("selector_desktop") &&
-      typeof obj["selector_desktop"] === "string"
-        ? sanitizeSelector(obj["selector_desktop"])
-        : "";
+      typeof obj["selector_desktop"] === "string" ?
+      sanitizeSelector(obj["selector_desktop"]) :
+      "";
     selector_mobile =
       obj.hasOwnProperty("selector_mobile") &&
-      typeof obj["selector_mobile"] === "string"
-        ? sanitizeSelector(obj["selector_mobile"])
-        : "";
+      typeof obj["selector_mobile"] === "string" ?
+      sanitizeSelector(obj["selector_mobile"]) :
+      "";
 
     // Threshold is the amount of space which is outside the viewport. It is to display images which are not complete visible inside the viewport
     threshold =
-      obj.hasOwnProperty("threshold") && typeof obj["threshold"] === "number"
-        ? Math.abs(obj["threshold"])
-        : 300;
+      obj.hasOwnProperty("threshold") && typeof obj["threshold"] === "number" ?
+      Math.abs(obj["threshold"]) :
+      300;
 
     if (break_point && (selector_desktop || selector_mobile)) {
       var mql = window.matchMedia(

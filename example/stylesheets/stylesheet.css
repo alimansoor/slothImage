@@ -1,5 +1,9 @@
 .gallery {}
 
+h3 {
+    font-style: italic;
+}
+
 .row {
     display: flex;
 }
@@ -21,4 +25,27 @@ img {
 
 img._img-loaded {
     opacity: 1;
+}
+
+.desktop-view {
+    width: 500px;
+
+}
+
+.mobile-view {
+    width: 200px;
+}
+
+
+@media (max-width: 767px) {
+    .desktop-view {
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .mobile-view {
+        display: none;
+    }
 }
