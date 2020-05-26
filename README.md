@@ -15,9 +15,9 @@ SlothImage will enable developers to have extremely light-weight pages which int
 
 [ECMAScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) is required to run the code.
 
-## Getting Started - HTML
+## Getting Started
 
-### Lazy Load Images ONLY
+### HTML
 
 In order to lazy load images ONLY, define images using `img` tags and place your image url inside `data-src` attribute and NOT inside `src`
 
@@ -27,11 +27,25 @@ In order to lazy load images ONLY, define images using `img` tags and place your
 
 You can define `src` attribute above with a low resolution image to give your page a nice look and feel.
 
+### JavaScript
+
+The easiest way to use SlothImage is to include the script:
+
+```
+<script src="slothImage.min.js"></script>
+
+<script>
+slothInit({});
+</script>
+```
+
 That's it!
 
-### Lazy Load Images AND Optimize Resolutions
+## ADVANCED - Image Optimization per Resolution
 
 In order to lazy load images and optimize them based on resolutions (mobile and desktop), define your images using `img` tags and place your image url inside `data-src` attribute and NOT inside `src`.
+
+### HTML
 
 Define both desktop and mobile version of your images using selector classes:
 
@@ -42,25 +56,7 @@ Define both desktop and mobile version of your images using selector classes:
 
 In the above example, you can define your images with different versions for both desktop and mobile and SlothImage will render it based on resolutions.
 
-## Getting Started - Script
-
-The easiest way to use SlothImage is to include the script:
-
-```
-<script src="slothImage.min.js"></script>
-```
-
-### Lazy Load Images ONLY
-
-In order to ONLY Lazy Load Images, define your javascript code:
-
-```
-<script>
-slothInit({});
-</script>
-```
-
-### Lazy Load Images AND Optimize Resolutions
+## JavaScript
 
 In order to lazy load images and optimize them based on resolutions, you need to define a breakpoint, desktop and mobile selectors in your javascript code:
 
